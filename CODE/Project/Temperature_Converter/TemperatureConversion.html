@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="TemperatureConversion.css">
+</head>
+<body>
+
+    <form>
+        <h1>Temperature Conversion</h1>
+        <input type="number" id="textBox" value="0"><br>
+
+        <input type="radio" id="CtoFahrenheit" name="unit">
+        <label for="CtoFahrenheit"> Celsius ➡️ Fahrenheit</label><br>
+
+        <input type="radio" id="CtoKelvin" name="unit">
+        <label for="CtoKelvin"> Celsius ➡️ Kelvin</label><br>
+
+        <input type="radio" id="FtoCelsius" name="unit">
+        <label for="FtoCelsius"> Fahrenheit ➡️ Celsius</label><br>
+
+        <input type="radio" id="FtoKelvin" name="unit">
+        <label for="FtoKelvin"> Fahrenheit ➡️ Kelvin</label><br>
+
+        <input type="radio" id="KtoCelsius" name="unit">
+        <label for="KtoCelsius"> Kelvin ➡️ Celsius</label><br>
+
+        <input type="radio" id="KtoFahrenheit" name="unit">
+        <label for="KtoFahrenheit"> Kelvin ➡️ Fahrenheit</label><br>
+
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="result"></p>
+
+    </form>
+
+    <script src="TemperatureConversion.js"></script>
+    
+</body>
+</html>

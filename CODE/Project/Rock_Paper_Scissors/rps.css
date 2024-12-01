@@ -1,0 +1,45 @@
+body{
+    background-color: beige;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Title{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.Btn{
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    font-size: 5rem;
+    padding: 10px;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin: 10px;
+}
+.text-below{
+    background-color: rgb(243, 243, 177);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 650px;
+}
+.result-css{
+    margin-top: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.move-css{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.score-css{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#reseter{
+    background-color: rgb(226, 226, 226);
+}
+.auto-play{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px;
+}

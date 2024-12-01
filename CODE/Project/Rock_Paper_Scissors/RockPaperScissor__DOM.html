@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="rps.css">
+    </head>
+    <body>
+            <p class="Title">Rock Paper Scissors</p>
+        
+            <button class="Btn" onclick="computerMoves('Rock')">✊</button>
+            <button class="Btn" onclick="computerMoves('Paper')">🤚</button>
+            <button class="Btn" onclick="computerMoves('Scissor')">✌️</button>
+            <button class="Btn" id="reseter" onclick="resetScore()">🔙</button>
+            <button class="auto-play" onclick="autoplay();">AutoPlay</button>
+            <div class="text-below">
+                <p class="result result-css"></p>
+                <p class="move move-css"></p>
+                <p class="score score-css"></p> 
+            </div>
+            
+            
+            
+
+            <script>
+            let score = JSON.parse(localStorage.getItem('score')) || {
+                    win: 0,
+                    lose: 0,
+                    tie: 0
+                }
+
+            function resetScore(){
+                score = {
+                    win: 0,
+                    lose: 0,
+                    tie: 0
+                }
+                updateScoreDisplay();
+                document.querySelector('.result').innerHTML = "";
+                document.querySelector('.move').innerHTML = "";
+            }
+
+            function updateScoreDisplay() {
+                document.querySelector('.score').innerHTML = `Win: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`;
+                localStorage.setItem('score', JSON.stringify(score));
+            }
+
+            function computerMoves(userMove){
+                const computerMove = ['Rock', 'Paper', 'Scissor'];
+                const Choice = Math.floor(Math.random() * 3);
+                let result;
+
+                if(computerMove[Choice] === userMove){
+                    result = 'Draw';
+                }
+                else{
+                    if(computerMove[Choice]==='Rock' && userMove === 'Paper' || computerMove[Choice]==='Paper' && userMove === 'Scissor' || computerMove[Choice]==='Scissor' && userMove === 'Rock'){
+                        result = 'Win';
+                    }
+                    else{
+                        result = 'Lose';
+                    }
+                }
+                updateScoreDisplay();
+
+                if(result === 'Win'){
+                    score.win++;
+                }
+                else if(result === 'Lose'){
+                    score.lose++;
+                }
+                else{
+                    score.tie++;
+                }
+                updateScoreDisplay();
+                document.querySelector('.result').innerHTML = result;
+                document.querySelector('.move').innerHTML = `You: ${userMove} ,______, Computer: ${computerMove[Choice]}`;
+            }
+
+            let isAutoPlay = false;
+            let intervalID;
+            function autoplay(){
+                if(!isAutoPlay){
+                    intervalID = setInterval( function(){
+                        const computerMove = ['Rock', 'Paper', 'Scissor'];
+                        let random2 = Math.floor(Math.random() * 3);
+                        computerMoves(computerMove[random2])
+                    }, 1000);
+                    isAutoPlay = true;
+                }
+                else{
+                    clearInterval(intervalID);
+                    isAutoPlay = false;
+                }
+            }
+            </script>
+    </body>
+</html>

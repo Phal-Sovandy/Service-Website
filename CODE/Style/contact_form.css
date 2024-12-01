@@ -50,6 +50,10 @@ footer #link-social{
     flex-direction: row;
     gap: 20px;
 }
+#link-social a:hover{
+    transform: scale(1.5) translateY(-3px);
+    margin-inline: 3px;
+}
 footer #link-social a{
     color: #1C2F36;
     transition: transform 0.2s ease, margin 0.2s ease;

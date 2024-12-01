@@ -6,6 +6,7 @@
     --color5: #5BE4A9;
     --color6: #FFC300;
     --color_form: #A8C4E7;
+    --color_btnIOS: rgb(10, 132, 255);
 }
 *{
     box-sizing: border-box;

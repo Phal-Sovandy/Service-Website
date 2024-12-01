@@ -1,0 +1,163 @@
+.projects-container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 220px);
+    grid-template-rows: repeat(4, 200px);
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+.project-card{
+    position: relative;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    text-align: center;
+
+    transition: background-color 0.5s ease, border 0.5s ease;
+
+    animation: appearing linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+.description-project{
+    color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, backdrop-filter 0.5s ease, background-color 0.5s ease;
+}
+.description-project h1{
+    max-width: 180px;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+}
+.description-project p{
+    font-size: 0.8rem;
+}
+.description-project .project-btn{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.description-project .project-btn button{
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+}
+.view-project{
+    background-color: rgba(255, 0, 0, 0);
+    border: 2px solid var(--color_btnIOS);
+    color: var(--color_btnIOS);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.view-project:hover{
+    background-color: var(--color_btnIOS);
+    border: 2px solid var(--color_btnIOS);
+    color: var(--color4);
+}
+.purchase-project{
+    background-color: var(--color_btnIOS);
+    border: 2px solid var(--color_btnIOS);
+    color: var(--color4);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.purchase-project:hover{
+    background-color: #1C2F36;
+    border: 2px solid #1C2F36;
+    color: var(--color4);
+}
+
+.project-card:hover{
+    border: 1px solid #1C2F36;
+}
+.project-card:hover .description-project{
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.719);
+    backdrop-filter: blur(5px);
+}
+
+#calculator{
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 2;
+}
+#temp{
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+#meme{
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;    
+}
+#rps{
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+#youtube{
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+}
+#todo{
+    grid-row: 2 / 4;
+    grid-column: 5 / 6;
+}
+#amazon{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
+#code{
+    grid-row: 4 / 5;
+    grid-column: 4 / 6;
+}
+
+
+
+.project-card{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#calculator{
+    background-image: url("../../../Midea/project-card/p1.png");
+}
+#temp{
+    background-image: url("../../../Midea/project-card/p2.png");
+}
+#meme{
+    background-image: url("../../../Midea/project-card/p5.png");
+}
+#rps{
+    background-image: url("../../../Midea/project-card/p8.png");
+}
+#amazon{
+    background-image: url("../../../Midea/project-card/p7.png");
+}
+#code{
+    background-image: url("../../../Midea/project-card/p6.png");
+}
+#youtube{
+    background-image: url("../../../Midea/project-card/p3.png");
+}
+#todo{
+    background-image: url("../../../Midea/project-card/p4.png");
+}

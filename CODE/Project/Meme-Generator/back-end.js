@@ -3,7 +3,7 @@ const contentArea = document.getElementById("mainContent");
 function showMeme(){
     const memes = ["meme1.jpg", "meme2.jpg", "meme3.jpg"];
     const selectedMeme = Math.floor(Math.random() * memes.length);
-    contentArea.innerHTML = `<img src="/memes/${memes[selectedMeme]}">`;
+    contentArea.innerHTML = `<img src="memes/${memes[selectedMeme]}">`;
 }
 function tellJoke(){
     const jokes = ["What do you call a pony with a cough?__A little horse.", "What did one hat say to the other?___You wait here. I’ll go on a head.", "What do you call a magic dog?___A labracadabrador"];

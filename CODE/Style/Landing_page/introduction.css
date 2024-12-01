@@ -1,0 +1,139 @@
+#landing-1{
+    display: flex;
+    height: calc(100vh - 100px);
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+#landing-1 #left{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 30px;
+}
+#landing-1 #left #top,
+#landing-1 #left #center{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#landing-1 #left p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+#landing-1 #left #center h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+#landing-1 #left #center p,
+#hire-btn-container h4{
+    color: var(--color2);
+}
+#landing-1 #left h1{
+    line-height: 120px;
+    font-size: 6rem;
+    font-weight: 700;
+}
+#landing-1 #left h1 span{
+    color: var(--color1);
+}
+#landing-1 #right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#landing-1 #right img{
+    width: 100%;
+}
+#left #btn-container{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+#hire-btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2px;
+}
+#hire-btn-container button{
+    background-color: var(--color1);
+    border: 2px solid var(--color1);
+    color: white;
+}
+#hire-btn-container button:hover{
+    background-color: var(--color3);
+    border-color: var(--color3);
+    color:var(--color1);
+}
+#see-more-btn{
+    background-color: #ffffff00;
+    border: 2px solid var(--color1);
+    color: var(--color1);
+}
+#see-more-btn:hover{
+    background-color: var(--color1);
+    color: var(--color4);
+}
+#btn-container button{
+    width: 160px;
+    height: 45px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 23px;
+    transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+}
+#btn-container h4{
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin: 0;
+}
+#portfolio-count{
+    text-align: center;
+    display: flex;
+    gap: 20px;
+}
+#study-cout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#customer-satisfaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+#progress-bar{
+    background-color: var(--color3);
+    height: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+}
+#progress{
+    width: 96%;
+    height: 100%;
+    background-color: var(--color5);
+    border-radius: 2px;
+    animation: progressBar 3s cubic-bezier(0.25,0.1,0.25,1) 1 normal;
+}
+#landing-1 #link-social{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+#landing-1 #link-social a{
+    color: var(--color1);
+    transition: transform 0.2s ease, margin 0.2s ease;
+}
+#link-social a:hover{
+    transform: scale(1.5) translateY(-3px);
+    margin-inline: 3px;
+}

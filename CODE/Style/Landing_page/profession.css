@@ -1,0 +1,168 @@
+#card-container{
+    position: relative;
+    backdrop-filter: blur(50px);
+}
+#card-container::before{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    transform: rotate(45deg);
+    content: '';
+    background-image: linear-gradient(-45deg, rgb(0, 55, 255), rgb(255, 255, 255));
+    width: 500px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.2;
+    z-index: -100;
+}
+#vertical-card{
+    width: 320px;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    animation: fromLeft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.card-description{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.profile-card{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.profile-card img{
+    height: 100%;
+    object-fit: cover;
+
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.des-skill{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.des-skill h4{
+    width: 20%;
+    text-align: center;
+}
+.skills{
+    width: 200px;
+    padding: 0;
+    height: 7px;
+    border-radius: 4px;
+    background-color: var(--color3);
+}
+.current-skills{
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    border-radius: 4px;
+    background-color: var(--color5);
+
+    animation: progressBar linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 15%;
+}
+
+#profession-page #card-container{
+    display: flex;
+    align-items: center;
+}
+#horizontal-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.horizontal-card{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 600px;
+    height: 300px;
+    padding: 10px 30px;
+
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    animation: fromRight linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+.horizontal-card .card-description{
+    text-align: left;
+}
+#horizontal-card1{
+    margin-left: 100px;
+}
+.horizontal-card .card-description{
+    flex: 1;
+    gap: 15px;
+}
+#card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+#vertical-card .js{
+    width: 90%;
+}
+#vertical-card .c{
+    width: 80%;
+}
+#vertical-card .python,
+#horizontal-card2 .excel,
+#horizontal-card1 .swift{
+    width: 100%;
+    background-color: var(--color6);
+}
+#vertical-card .r{
+    width: 85%;
+}
+
+#horizontal-card1 .js{
+    width: 75%;
+}
+#horizontal-card1 .c{
+    width: 90%;
+}
+#horizontal-card1 .sql{
+    width: 95%;
+}
+
+#horizontal-card2 .java{
+    width: 85%;
+}
+#horizontal-card2 .c{
+    width: 70%;
+}
+#horizontal-card2 .python{
+    width: 95%;
+}

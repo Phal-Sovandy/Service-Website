@@ -1,0 +1,52 @@
+:root{
+    --color1: #5873B8;
+    --color2: #B3CEE8;
+    --color3: #EEF9FE;
+    --color4: #ffffff;
+    --color5: #5BE4A9;
+    --color6: #FFC300;
+    --color_form: #A8C4E7;
+}
+*{
+    box-sizing: border-box;
+    font-family: Poppins, "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    position: relative;
+    background-color: #1C2F36;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+button:hover,
+a:hover{
+    cursor: pointer;
+}
+::selection{
+    background-color: var(--color5);
+    color: #1C2F36;
+}
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+main{
+    width: 100%;
+    padding-inline: 50px;
+}
+main > section{
+    width: 100%;
+    margin-top: 100px;
+}
+.heading-across-the-page {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.heading-across-the-page h1{
+    font-size: 4rem;
+}
+.heading-across-the-page h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color2)
+}
+

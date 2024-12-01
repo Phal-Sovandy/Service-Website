@@ -1,0 +1,23 @@
+@keyframes progressBar{
+    from{ 
+        background-color: var(--color1);
+        width: 0;
+    }
+}
+@keyframes fromRight{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+@keyframes fromLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+@keyframes appearing {
+    from{
+        opacity: 0;
+    }
+}

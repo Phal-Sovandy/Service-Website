@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: cadetblue;
+}
+h1, h2, h3, h4, h5, p{
+    margin: 0;
+}
+#check-out-form{
+    margin: auto;
+    width: 60%;
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#check-out-form #head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#service-card-checkout-container{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow: auto;
+    padding-block: 5px;
+}
+.service-card-checkout{
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #1C2F36;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 250px;
+    overflow: hidden;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#mid,
+#payment-method,
+#service-selection,
+#card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+#bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#check-out-form input{
+    background-color: rgba(225, 225, 225, 0);
+    border: 1px solid #1C2F36;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#payment-card-container{
+    display: flex;
+    gap: 10px;
+}
+.payment-card{
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.payment-card > div{
+    flex-shrink: 0;
+    background-color: rgb(126, 126, 126);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+#card-info-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#info{
+    display: flex;
+    justify-content: space-between;
+}
+#info-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 2;
+}
+#info-right{
+    flex: 1;
+    background-image: url("../../../Midea/Service_Cards/khqr_for_check_out.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

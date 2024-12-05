@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Out</title>
     <link rel="stylesheet" href="../Style/checkout_form/checkout_form.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d25a3c086.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -13,11 +21,13 @@
             <div id="check-out-form">
                 <div id="head">
                     <h2>Check Out</h2>
-                    <div>X</div>
+                    <div>
+                        <i class="fa-solid fa-minus fa-l"></i>
+                    </div>
                 </div>
                 
                 <div id="service-selection">
-                    <h3>Pick your service</h3>
+                    <h4>Pick your service</h4>
                     <div id="service-card-checkout-container">
                         <div class="service-card-checkout">
                             <h4>Web Development</h4>
@@ -51,22 +61,22 @@
                     <div id="info-left">
                         <div id="mid">
                             <h4>What is your email?</h4>
-                            <input type="text" placeholder="someone@example.com">
+                            <input type="email" placeholder="someone@example.com" required>
                             <p>Already have an account? <a href="">Sign in here.</a></p>
                         </div>
                         <div id="bottom">
                             <div id="payment-method">
                                 <h4>Payment Method</h4>
-                                <div id="payment-card-container">
-                                    <div class="payment-card">
+                                <div id="payment-card-container" onclick="contentRightPay(khqr_for_check_out)">
+                                    <div class="payment-card" data-val="khqr_for_check_out">
                                         <div></div>
                                         <h5>ABA KHQR</h4>
                                     </div>
-                                    <div class="payment-card">
+                                    <div class="payment-card" data-val="card_for_check_out">
                                         <div></div>
                                         <h5>Master / Visa Card</h5>
                                     </div>
-                                    <div class="payment-card">
+                                    <div class="payment-card" data-val="paypal_for_check_out">
                                         <div></div>
                                         <h5>Paypal</h5>
                                     </div>
@@ -75,9 +85,13 @@
                             <div id="card-info">
                                 <h4>Card Info</h4>
                                 <div id="card-info-input">
-                                    <input type="text" placeholder="Card Number MM / YY / CVC">
-                                    <input type="text" placeholder="Name on card">
+                                    <input type="text" placeholder="Card Number MM / YY / CVC" required>
+                                    <input type="text" placeholder="Name on card" required>
                                 </div>
+                            </div>
+                            <div id="btn">
+                                <button type="reset">Reset</button>
+                                <button type="submit">Check Out</button>
                             </div>
                             
                         </div>
@@ -89,5 +103,6 @@
         
     </main>
     
+    <script src="../Interactive/payment_form.js"></script>
 </body>
 </html>

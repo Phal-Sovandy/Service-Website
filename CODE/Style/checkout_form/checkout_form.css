@@ -3,6 +3,11 @@
 }
 body{
     background-color: cadetblue;
+    margin: 0;
+    position: relative;
+    background-color: #1C2F36;
+    width: 100%;
+    font-family: Poppins, "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
 h1, h2, h3, h4, h5, p{
     margin: 0;
@@ -41,6 +46,34 @@ h1, h2, h3, h4, h5, p{
     overflow: hidden;
     padding: 10px 15px;
     border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+.selected-service{
+    background-color: #1C2F36;
+    color: white;
+}
+.service-card-checkout:hover,
+.payment-card:hover{
+    cursor: pointer;
+    background-color: #1C2F36;
+    color: white;
+}
+.service-card-checkout:active,
+.payment-card:active{
+    background-color: white;
+    color: #1C2F36;
+}
+#check-out-form p{
+    font-size: 0.8rem;
+}
+#service-selection > h4,
+#mid h4,
+#payment-method h4,
+#card-info h4{
+    font-size: 1rem;
+}
+.service-card-checkout h4{
+    font-size: 0.9rem;
 }
 #mid,
 #payment-method,
@@ -74,6 +107,7 @@ h1, h2, h3, h4, h5, p{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    transition: background-color 0.2s ease;
 }
 .payment-card > div{
     flex-shrink: 0;
@@ -81,6 +115,10 @@ h1, h2, h3, h4, h5, p{
     width: 10px;
     height: 10px;
     border-radius: 10px;
+}
+.selected-method{
+    background-color: #1C2F36;
+    color: white;
 }
 #card-info-input{
     display: flex;
@@ -103,4 +141,27 @@ h1, h2, h3, h4, h5, p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+#btn button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: var(--color5);
+    border: 2px solid #1C2F36;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+#btn button:last-child{
+    background-color: #1C2F36;
+    color: white;
+}
+#btn button:last-child:hover{
+    background-color: #16b44e;
+    border-color: #16b44e;
+    color: white;
+}
+#btn button:first-child:hover{
+    background-color: #ee2c00;
+    border-color: #ee2c00;
+    color: white;
 }

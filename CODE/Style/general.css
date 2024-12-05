@@ -23,6 +23,10 @@ button:hover,
 a:hover{
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 ::selection{
     background-color: var(--color5);
     color: #1C2F36;

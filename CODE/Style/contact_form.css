@@ -77,7 +77,7 @@ footer #link-social a{
     padding: 15px 20px;
 }
 #right-part input::placeholder{
-    color: rgb(0, 0, 0);
+    color: rgb(50, 50, 50);
     font-weight: 200;
     font-size: 1rem;
 }

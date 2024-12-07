@@ -1,17 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #0b2749;
-    color: #f5f5f5;
-    padding: 20px;
-}
-
-.container {
+main {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -37,11 +24,14 @@ header input {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: rgb(57, 94, 127);
+    padding: 20px;
+    border-radius: 5px;
 }
 
 .blog-post {
     display: flex;
-    background-color: #334b58;
+    background-color: #476474;
     border-radius: 10px;
     padding: 15px;
     gap: 15px;

@@ -1,70 +1,200 @@
 main {
-    max-width: 900px;
-    margin: 0 auto;
+  margin-top: 20px;
+  margin-inline: auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 header h1 {
-    font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 header input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
+  background-color: #00000000;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  color: var(--color4);
+  outline: none;
+}
+header div {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--color4);
 }
 
 .blog {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: rgb(57, 94, 127);
-    padding: 20px;
-    border-radius: 5px;
+  height: 150vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #203841;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .blog-post {
-    display: flex;
-    background-color: #476474;
-    border-radius: 10px;
-    padding: 15px;
-    gap: 15px;
+  height: 270px;
+  display: flex;
+  background-color: #3c6574;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 20px;
 }
 
+.blog-post:hover .thumbnail img {
+  transform: scale(1.1);
+}
 .thumbnail {
-    width: 120px;
-    height: 120px;
-    background: url('placeholder.png') center/cover no-repeat;
-    border-radius: 10px;
+  width: 400px;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
 }
 
 .content {
-    flex: 1;
+  padding-block: 5px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .content h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 .content p {
-    margin-bottom: 5px;
-    font-size: 0.9rem;
+  font-size: 0.8rem;
+  color: var(--color4);
 }
-
+.content > p {
+  overflow-y: auto;
+}
+.title-blog-post {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.title-blog-post p {
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--color3);
+}
 .info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.info div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+.info div:hover {
+  background-color: rgba(164, 164, 164, 0.411);
 }
 
-.info span {
-    cursor: pointer;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-block: 50px;
 }
+
+footer * {
+  color: #3c6574;
+}
+footer #link-social {
+  margin-block: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#link-social a:hover {
+  transform: scale(1.5) translateY(-3px);
+  margin-inline: 3px;
+}
+footer #link-social a {
+  color: #1c2f36;
+  transition: transform 0.2s ease, margin 0.2s ease;
+}
+#copy-right > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#copy-right img {
+  width: 100px;
+}
+
+.trend > h1{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.trend{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.trend-scroll{
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #203841;
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  overflow-x: auto;
+}
+.trend-scroll .blog-post{
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+}
+.trend-scroll .blog-post .thumbnail {
+  width: 350px;
+  height: 200px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.trend-scroll .blog-post .content h3{
+  white-space: nowrap;
+  max-width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.trend-scroll .blog-post .content > p{
+  height: 230px;
+  margin-bottom: 10px;
+}
+

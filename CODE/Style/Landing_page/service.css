@@ -56,3 +56,23 @@
     text-decoration: none;
     color: #1f1f1f;
 }
+
+@media (max-width: 810px) {
+    .services-container{
+        grid-template-columns: repeat(2, 250px);
+    }
+
+}
+@media (max-width: 530px) {
+    .services-container{
+        grid-template-columns: 90%;
+    }
+    .service-card{
+        align-content: center;
+        padding: 20px;
+    }
+    .description-service{
+        align-self: center;
+    }
+
+}

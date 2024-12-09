@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
+    <title>Service - Sooner Tech</title>
     <link rel="stylesheet" href="../Style/Service/header.css">
     <link rel="stylesheet" href="../Style/Service/shape.css">
     <link rel="stylesheet" href="../Style/navigation.css">
     <link rel="stylesheet" href="../Style/contact_form.css">
     <link rel="stylesheet" href="../Style/general.css">
+    <link rel="stylesheet" href="../Style/checkout_form/checkout_form.css" />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/7d25a3c086.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
-        <div class="background-vid"><video src="../../Midea/Service_Cards/serviceBackground.mp4" autoplay muted loop></video></div>
+        <div class="background-vid"><video src="../../Midea/Service_Cards/serviceBackground.mp4" autoplay muted
+                loop></video></div>
         <div class="info">
             <div class="info-1">
                 <h1>Our Offered Services</h1>
-                <p>At about this time of year, some months after New Year's resolutions have been made and kept, or made and neglected
+                <p>At about this time of year, some months after New Year's resolutions have been made and kept, or made
+                    and neglected
                 </p>
             </div>
-            <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL. My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives.</p>
+            <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a
+                background in mathematics, our specialize in data analysis, machine learning, and visualization, using
+                tools like Python, R, and SQL. our journey in data science began when our took a coding bootcamp that
+                ignited our interest in analytics. our believe every dataset has a story, and our love collaborating
+                with
+                teams to uncover those narratives.</p>
             <input type="text" placeholder="Search for the service...">
         </div>
     </header>
@@ -35,83 +50,463 @@
     <nav style="margin-block: 20px;">
         <div id="left-nav"><a href="service.html"><img src="../../Midea/Sooner_Logo(white).png"></a></div>
         <div id="right-nav">
-            <a href="home.html"><h3>HOME</h3></a>
-            <a href="about.html"><h3>ABOUT</h3></a>
-            <a href="service.html"><h3>SERVICES</h3></a>
-            <a href="Portfolio.html"><h3>PORFOLIO</h3></a>
-            <a href="blog.html"><h3>BLOG</h3></a>
-            <a href="contact.html"><h3>CONTACTS</h3></a>
+            <a href="home.html">
+                <h3>HOME</h3>
+            </a>
+            <a href="about.html">
+                <h3>ABOUT</h3>
+            </a>
+            <a href="service.html">
+                <h3>SERVICES</h3>
+            </a>
+            <a href="Portfolio.html">
+                <h3>PORFOLIO</h3>
+            </a>
+            <a href="blog.html">
+                <h3>BLOG</h3>
+            </a>
+            <a href="contact.html">
+                <h3>CONTACTS</h3>
+            </a>
         </div>
     </nav>
 
+    <div id="check-out-form">
+        <form>
+            <div id="check-out-form-inner">
+                <div id="head">
+                    <h2>Check Out</h2>
+                    <div>
+                       <i class="fa-solid fa-minus fa-l" onclick="hideForm();"></i>
+                    </div>
+                </div>
+
+                <div id="service-selection">
+                    <h4>Pick your service</h4>
+                    <div id="service-card-checkout-container">
+                        <div class="service-card-checkout">
+                            <h4>Web Development</h4>
+                            <p>Boost your business with custom web and software development solutions tailored to your
+                                needs.</p>
+                            <div>
+                                <h4>$2,000 - $50,000</h4>
+                                <i class="fa-solid fa-circle-check fa-l"></i>
+                            </div>
+                        </div>
+                        <div class="service-card-checkout">
+                            <h4>Software Development</h4>
+                            <p>Boost your business with custom web and software development solutions tailored to your
+                                needs.</p>
+                            <div>
+                                <h4>$2,000 - $50,000</h4>
+                                <i class="fa-solid fa-circle-check fa-l"></i>
+                            </div>
+                        </div>
+                        <div class="service-card-checkout">
+                            <h4>Robotic</h4>
+                            <p>Boost your business with custom web and software development solutions tailored to your
+                                needs.</p>
+                            <div>
+                                <h4>$2,000 - $50,000</h4>
+                                <i class="fa-solid fa-circle-check fa-l"></i>
+                            </div>
+                        </div>
+                        <div class="service-card-checkout">
+                            <h4>Machine Learning and AI Development</h4>
+                            <p>Boost your business with custom web and software development solutions tailored to your
+                                needs.</p>
+                            <div>
+                                <h4>$2,000 - $50,000</h4>
+                                <i class="fa-solid fa-circle-check fa-l"></i>
+                            </div>
+                        </div>
+                        <div class="service-card-checkout">
+                            <h4>AI Tools</h4>
+                            <p>Boost your business with custom web and software development solutions tailored to your
+                                needs.</p>
+                            <div>
+                                <h4>$2,000 - $50,000</h4>
+                                <i class="fa-solid fa-circle-check fa-l"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info">
+                    <div id="info-left">
+                        <div id="mid">
+                            <h4>What is your email?</h4>
+                            <input type="email" placeholder="someone@example.com" required>
+                            <p>Already have an account? <a href="">Sign in here.</a></p>
+                        </div>
+                        <div id="bottom">
+                            <div id="payment-method">
+                                <h4>Payment Method</h4>
+                                <div id="payment-card-container">
+                                    <div class="payment-card pay-method1" onclick="toggleButton('pay-method1', 'khqr_for_check_out.jpg');">
+                                        <div></div>
+                                        <h5>ABA KHQR</h5>
+                                    </div>
+                                    <div class="payment-card pay-method2" onclick="toggleButton('pay-method2', 'visa_master.png');">
+                                        <div></div>
+                                        <h5>Master / Visa Card</h5>
+                                    </div>
+                                    <div class="payment-card pay-method3" onclick="toggleButton('pay-method3', 'paypal.png');">
+                                        <div></div>
+                                        <h5>Paypal</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="card-info">
+                                <h4>Card Info</h4>
+                                <div id="card-info-input">
+                                    <input type="text" placeholder="Card Number ( MM / YY / CVC )" pattern="[0-9]{2}/[0-9]{2}/[0-9]{3}" required>
+                                    <input type="text" placeholder="Name on card" required>
+                                </div>
+                            </div>
+                            <div id="btn">
+                                <button type="reset">Reset</button>
+                                <button type="submit">Check Out</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="info-right"></div>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <div class="container-card-service">
-        <a href="checkout.html">
-            <div class="card">
-                <div class="picture"><img src="../../Midea/Service_Cards/web_dev.png"></div>
-                <div class="text">
-                    <h2>Web Development</h2>
-                    <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL.My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives</p>
-                </div>
-            </div>  
-        </a>
 
-        <a href="checkout.html">
-            <div class="card">
-                <div class="picture"><img src="../../Midea/Service_Cards/software_dev.png"></div>
-                <div class="text">
-                    <h2>Software Development</h2>
-                    <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL.My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives</p>
+        <div class="card">
+            <div class="picture"><img src="../../Midea/Service_Cards/web_dev.png"></div>
+            <div class="text">
+                <h2>Web Development</h2>
+                <div>
+                    <p>Unlock the potential of your business with a professionally developed website that brings
+                        both
+                        form and function together. our custom web development services are designed to deliver:</p>
+                    <ul>
+                        <li>
+                            <span>A Unique Online Presence:</span> Your website will reflect your brand identity,
+                            setting you apart
+                            from the competition with a design that aligns with your vision and values.
+                        </li>
+                        <li>
+                            <span>Seamless User Experience:</span> Through responsive, mobile-friendly design, your
+                            visitors will
+                            enjoy a smooth and engaging experience, no matter the device they use.
+                        </li>
+                        <li>
+                            <span>Increased Conversions:</span> With a user-focused layout and intuitive navigation,
+                            your website
+                            will make it easier for visitors to take action—whether that's making a purchase,
+                            signing
+                            up, or contacting you.
+                        </li>
+                        <li>
+                            <span>Enhanced Performance:</span> Fast loading speeds and optimized code ensure that
+                            your website
+                            performs well, improving search engine rankings and reducing bounce rates.
+                            Scalability and Security: As your business grows, your website will adapt. our build
+                            secure,
+                            scalable websites that can grow with you, ensuring both your data and your users are
+                            protected.
+                        </li>
+                    </ul>
+                    <p>By choosing our web development services, you’ll receive a powerful online platform that not
+                        only looks great but drives results, helping you achieve your business goals and connect
+                        with your audience.
+                    </p>
                 </div>
+                <button onclick="showForm();">Purchase</button>
             </div>
-        </a>
+        </div>
 
-        <a href="checkout.html">
-            <div class="card">
-                <div class="picture"><img src="../../Midea/Service_Cards/robotic.png"></div>
-                <div class="text">
-                    <h2>Software Development</h2>
-                    <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL.My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives</p>
+        <div class="card">
+            <div class="picture"><img src="../../Midea/Service_Cards/software_dev.png"></div>
+            <div class="text">
+                <h2>Web Development</h2>
+                <div>
+                    <p>Empower your business with tailor-made software solutions designed to streamline operations,
+                        enhance productivity, and solve complex challenges. our software development services offer:
+                    </p>
+                    <ul>
+                        <li>
+                            <span>Bespoke Solutions for Your Needs:</span> Whether you need a custom desktop
+                            application, enterprise-level system, or specialized software tool, our craft solutions
+                            specifically tailored to your business processes and goals.
+                        </li>
+                        <li>
+                            <span>Improved Efficiency:</span> By automating tasks and optimizing workflows, the software
+                            our develop helps you save time and reduce manual errors, boosting productivity and
+                            operational efficiency.
+                        </li>
+                        <li>
+                            <span>Increased Conversions:</span> With a user-focused layout and intuitive navigation,
+                            your website will make it easier for visitors to take action—whether that's making a
+                            purchase, signing up, or contacting you.
+                        </li>
+                        <li>
+                            <span>Seamless Integration:</span> our ensure your new software integrates smoothly with
+                            existing systems, enabling better data management and improved communication across
+                            departments.
+                        </li>
+                        <li>
+                            <span>Scalability & Flexibility:</span> As your business evolves, so can your software. our
+                            design systems that are flexible, scalable, and can grow with you, ensuring long-term value.
+                        </li>
+                        <li>
+                            <span>Robust Security:</span> our software will be built with security in mind, offering
+                            strong data protection, user authentication, and compliance with industry standards to keep
+                            your sensitive information safe.
+                        </li>
+                        <li>
+                            <span>User-Centric Design:</span> From intuitive user interfaces to high performance, the
+                            software will be designed with your users in mind, making it easy to learn, use, and achieve
+                            results.
+                        </li>
+                    </ul>
+                    <p>By choosing our software development services, you’ll gain a powerful, custom-built solution that
+                        addresses your unique business challenges and sets you up for long-term success.
+                    </p>
                 </div>
+                <button onclick="showForm();">Purchase</button>
             </div>
-        </a>
+        </div>
 
-        <a href="checkout.html">
-            <div class="card">
-                <div class="picture"><img src="../../Midea/Service_Cards/machine_learning.png"></div>
-                <div class="text">
-                    <h2>Software Development</h2>
-                    <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL.My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives</p>
+        <div class="card">
+            <div class="picture"><img src="../../Midea/Service_Cards/data_analysis.png"></div>
+            <div class="text">
+                <h2>Data Analysis</h2>
+                <div>
+                    <p>Unlock the full potential of your business with insightful and actionable data analysis. Our data
+                        analysis services are designed to help you transform raw data into valuable insights that drive
+                        better decisions, enhance performance, and uncover new opportunities. With our services, you can
+                        expect:
+                    </p>
+                    <ul>
+                        <li>
+                            <span>Tailored Data Insights:</span> We analyze your business data and identify key
+                            patterns, trends, and correlations that directly impact your operations, enabling you to
+                            make data-driven decisions with confidence.
+                        </li>
+                        <li>
+                            <span>Improved Decision Making:</span> With deep insights derived from your data, you can
+                            make informed decisions that optimize processes, improve customer engagement, and boost
+                            profitability, ensuring that every choice is backed by accurate and relevant information.
+                        </li>
+                        <li>
+                            <span>Comprehensive Data Reporting:</span> We create clear, visual, and easy-to-understand
+                            reports and dashboards, providing you with a comprehensive view of your data and key
+                            performance metrics, enabling quick and effective decision-making.
+                        </li>
+                        <li>
+                            <span>Predictive Analytics:</span> By applying advanced statistical techniques and machine
+                            learning models, we help forecast future trends, behaviors, and outcomes, giving your
+                            business the foresight to plan and strategize proactively.
+                        </li>
+                        <li>
+                            <span>Identifying Hidden Opportunities:</span> Through data exploration and analysis, we
+                            help uncover new business opportunities, from market trends to operational efficiencies,
+                            that you may have otherwise overlooked.
+                        </li>
+                        <li>
+                            <span>Optimized Performance:</span> By examining business processes, customer data, and
+                            other relevant metrics, we identify areas for improvement, helping you optimize operations,
+                            reduce costs, and enhance overall performance.
+                        </li>
+                        <li>
+                            <span>Data Cleansing & Quality Assurance:</span> We ensure that your data is accurate,
+                            consistent, and ready for analysis by performing thorough data cleaning and validation, so
+                            your insights are based on reliable information.
+                        </li>
+                    </ul>
+                    <p>By choosing our robotics development services, you'll gain a future-proof, efficient, and precise
+                        automation solution that transforms your operations, reduces costs, and improves your
+                        competitive edge.
+                    </p>
                 </div>
+                <button onclick="showForm();">Purchase</button>
             </div>
-        </a>
+        </div>
 
-        <a href="checkout.html">
-            <div class="card">
-                <div class="picture"><img src="../../Midea/Service_Cards/ai.png"></div>
-                <div class="text">
-                    <h2>Software Development</h2>
-                    <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL.My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives</p>
+        <div class="card">
+            <div class="picture"><img src="../../Midea/Service_Cards/robotic.png"></div>
+            <div class="text">
+                <h2>Robotic</h2>
+                <div>
+                    <p>Revolutionize your business processes with cutting-edge robotics solutions that increase
+                        efficiency, accuracy, and productivity. our robotics development services bring innovative
+                        automation to life, offering:
+                    </p>
+                    <ul>
+                        <li>
+                            <span>Tailored Solutions for Your Business:</span> Whether you need a desktop application,
+                            enterprise software, or a specialized tool, our create custom-built software that fits your
+                            unique requirements and business objectives.
+                        </li>
+                        <li>
+                            <span>Boosted Efficiency and Automation:</span> By automating manual processes and
+                            streamlining operations, the software our develop helps improve efficiency, reduce errors,
+                            and free up valuable time for your team to focus on growth.
+                        </li>
+                        <li>
+                            <span>Seamless Integration with Existing Systems:</span> our solutions integrate smoothly
+                            with your current infrastructure, ensuring that data flows seamlessly across your business,
+                            enhancing collaboration and decision-making.
+                        </li>
+                        <li>
+                            <span>Scalability and Future-Proofing:</span> Your business will grow—and so will your
+                            software. our build scalable systems that are designed to evolve with your needs, ensuring
+                            they remain effective as your operations expand.
+                        </li>
+                        <li>
+                            <span>Enhanced Security and Reliability:</span> Security is a top priority in our
+                            development process. our build software that ensures your data is protected, with secure
+                            authentication and compliance with industry standards.
+                        </li>
+                        <li>
+                            <span>Intuitive User Experience:</span> The software our create is designed for ease of use,
+                            with user-friendly interfaces that reduce training time and increase adoption across your
+                            organization.
+                        </li>
+                    </ul>
+                    <p>By choosing our robotics development services, you'll gain a future-proof, efficient, and precise
+                        automation solution that transforms your operations, reduces costs, and improves your
+                        competitive edge.
+                    </p>
                 </div>
+                <button onclick="showForm();">Purchase</button>
             </div>
-        </a>
+        </div>
 
-        <a href="checkout.html">
-            <div class="card">
-                <div class="picture"><img src="../../Midea/Service_Cards/web_dev.png"></div>
-                <div class="text">
-                    <h2>Software Development</h2>
-                    <p>Hi, we're data scientists passionate about turning complex data into actionable insights. With a background in mathematics, I specialize in data analysis, machine learning, and visualization, using tools like Python, R, and SQL.My journey in data science began when I took a coding bootcamp that ignited my interest in analytics. I believe every dataset has a story, and I love collaborating with teams to uncover those narratives</p>
+        <div class="card">
+            <div class="picture"><img src="../../Midea/Service_Cards/machine_learning.png"></div>
+            <div class="text">
+                <h2>Machine Learning and AI Development</h2>
+                <div>
+                    <p>Unlock the power of data with advanced Machine Learning (ML) and Artificial Intelligence (AI)
+                        solutions designed to drive intelligent decision-making, automation, and innovation. our AI and
+                        ML development services provide:</p>
+                    <ul>
+                        <li>
+                            <span>Tailored AI Solutions for Your Business:</span> Whether you need predictive analytics,
+                            natural language processing, computer vision, or recommendation systems, our develop AI
+                            solutions that are customized to meet your specific business needs and challenges.
+                        </li>
+                        <li>
+                            <span>Data-Driven Insights:</span> our leverage machine learning algorithms to analyze large
+                            datasets and uncover valuable insights, enabling you to make more informed decisions,
+                            identify trends, and forecast future outcomes with greater accuracy.
+                        </li>
+                        <li>
+                            <span>Automation and Efficiency:</span> By integrating AI-powered automation, our help
+                            businesses reduce manual effort, optimize processes, and improve productivity, allowing your
+                            team to focus on strategic growth rather than routine tasks.
+                        </li>
+                        <li>
+                            <span>Improved Customer Experience:</span> With AI-driven chatbots, personalized
+                            recommendations, and predictive analytics, our build systems that enhance user experiences,
+                            anticipate customer needs, and drive engagement.
+                        </li>
+                        <li>
+                            <span>Scalable and Adaptive Systems:</span> The AI and ML solutions our create are designed
+                            to scale with your business and adapt over time, ensuring that as your data grows, your
+                            systems continue to improve and evolve.
+                        </li>
+                        <li>
+                            <span>Advanced Algorithms and Models:</span> our use state-of-the-art machine learning
+                            techniques and deep learning models to solve complex problems, from classification and
+                            clustering to anomaly detection and reinforcement learning.
+                        </li>
+                        <li>
+                            <span>Ethical AI and Compliance:</span> our ensure that the AI solutions our develop are
+                            ethical, transparent, and compliant with relevant industry standards, keeping privacy and
+                            fairness at the forefront of every project.
+                        </li>
+                    </ul>
+                    <p>By choosing our Machine Learning and AI development services, you will harness the power of
+                        intelligent systems to automate tasks, gain deeper insights from your data, and create
+                        innovative solutions that push your business forward.
+                    </p>
                 </div>
+                <button onclick="showForm();">Purchase</button>
             </div>
-        </a>
+        </div>
+
+        <div class="card">
+            <div class="picture"><img src="../../Midea/Service_Cards/ai.png"></div>
+            <div class="text">
+                <h2>AI Tools</h2>
+                <div>
+                    <p>Empower your business with innovative AI tools designed to optimize processes, automate tasks,
+                        and unlock new opportunities. Our AI tools development services provide customized solutions
+                        that integrate seamlessly into your operations, bringing transformative benefits, including:</p>
+                    <ul>
+                        <li>
+                            <span>Customized AI Solutions:</span> We develop AI-powered tools tailored to your specific
+                            business needs, whether it's automation, data analysis, predictive modeling, or natural
+                            language processing. Our tools are designed to improve efficiency, reduce costs, and solve
+                            complex challenges unique to your industry.
+                        </li>
+                        <li>
+                            <span>Enhanced Decision-Making:</span> Our AI tools leverage advanced machine learning
+                            algorithms to process vast amounts of data, offering actionable insights that help you make
+                            faster, more informed decisions, and identify growth opportunities.
+                        </li>
+                        <li>
+                            <span>Process Automation:</span> With AI-powered automation, we eliminate repetitive manual
+                            tasks, saving time and resources while enhancing productivity. From intelligent chatbots to
+                            automated reporting, we help streamline your workflows and optimize operations.
+                        </li>
+                        <li>
+                            <span>Scalable and Adaptable Tools:</span> Our AI tools are built with scalability in mind.
+                            As your business grows, our tools evolve with you, adapting to new data, processes, and
+                            challenges, ensuring long-term value.
+                        </li>
+                        <li>
+                            <span>Real-Time Data Processing:</span> Our tools enable real-time data analysis, providing
+                            instant feedback and actionable insights that allow you to respond quickly to changing
+                            conditions and make proactive decisions.
+                        </li>
+                        <li>
+                            <span>Improved Customer Experience:</span> From personalized recommendations to predictive
+                            customer service, we develop AI tools that enhance the user experience, fostering stronger
+                            customer relationships and driving engagement.
+                        </li>
+                        <li>
+                            <span>Continuous Learning and Improvement:</span> The AI tools we create are designed to
+                            learn and improve over time. By utilizing machine learning techniques, our tools evolve as
+                            they process more data, constantly increasing their effectiveness and accuracy.
+                        </li>
+                    </ul>
+                    <p>By choosing our AI tools development services, you’ll gain access to powerful, intelligent
+                        systems that streamline your operations, enhance customer experiences, and drive innovation,
+                        positioning your business for success in a rapidly evolving digital world.
+                    </p>
+                </div>
+                <button onclick="showForm();">Purchase</button>
+            </div>
+        </div>
     </div>
 
     <footer>
         <div id="left-part">
             <h1>Have a question?</h1>
-            <p>We’re here to provide you with all the details and support you need to make the best decisions for your business. Whether you're curious about the full range of services we offer, have specific project requirements, or are looking for expert advice on how we can help bring your vision to life, our team is ready to assist. We pride ourselves on delivering personalized solutions that are tailored to your unique goals and challenges. We take the time to understand your needs and ensure that every question you have is answered clearly and thoroughly.</p>
+            <p>We’re here to provide you with all the details and support you need to make the best decisions for your
+                business. Whether you're curious about the full range of services we offer, have specific project
+                requirements, or are looking for expert advice on how we can help bring your vision to life, our team is
+                ready to assist. We pride ourselves on delivering personalized solutions that are tailored to your
+                unique goals and challenges. We take the time to understand your needs and ensure that every question
+                you have is answered clearly and thoroughly.</p>
 
-            <p>Simply fill out the form below, and one of our experts will get back to you promptly with the answers you're looking for. Whether you have a quick question or need in-depth assistance, we’re committed to delivering exceptional customer service. Your time is valuable, and we’re here to make sure your experience with us is smooth, informative, and tailored to your needs. We look forward to connecting with you and helping you achieve your goals.</p>
+            <p>Simply fill out the form below, and one of our experts will get back to you promptly with the answers
+                you're looking for. Whether you have a quick question or need in-depth assistance, we’re committed to
+                delivering exceptional customer service. Your time is valuable, and we’re here to make sure your
+                experience with us is smooth, informative, and tailored to your needs. We look forward to connecting
+                with you and helping you achieve your goals.</p>
             <div id="link-social">
                 <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter fa-xl"></i></a>
                 <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
@@ -150,7 +545,7 @@
                     <button id="reset" type="reset">Reset</button>
                     <button id="submit" type="submit">Submit</button>
                 </div>
-    
+
             </form>
 
         </div>
@@ -158,4 +553,6 @@
 
 </body>
 <script src="../Interactive/interact.js"></script>
+<script src="../Interactive/payment_form.js"></script>
+
 </html>

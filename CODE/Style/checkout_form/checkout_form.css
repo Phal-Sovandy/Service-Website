@@ -1,31 +1,44 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    background-color: cadetblue;
-    margin: 0;
-    position: relative;
-    background-color: #1C2F36;
-    width: 100%;
-    font-family: Poppins, "Roboto Condensed", Arial, Helvetica, sans-serif;
-}
-h1, h2, h3, h4, h5, p{
-    margin: 0;
-}
 #check-out-form{
-    margin: auto;
-    width: 60%;
-    background-color: rgb(247, 247, 247);
-    padding: 20px;
+    display: none;
+    color: black;
+    position: fixed;
+    z-index: 1000;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 0 20px 20px 20px;
     border-radius: 5px;
+    width: 70%;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+#check-out-form form{
+    width: 100%;
+}
+#check-out-form-inner{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
-#check-out-form #head{
+#check-out-form-inner #head{
+    background-color: var(--color4);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #1C2F36;
+}
+#check-out-form-inner #head i{
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+#check-out-form-inner #head i:hover{
+    background-color: #e7e7e7;;
 }
 #service-card-checkout-container{
     display: flex;
@@ -48,14 +61,11 @@ h1, h2, h3, h4, h5, p{
     border-radius: 5px;
     transition: background-color 0.2s ease;
 }
-.selected-service{
-    background-color: #1C2F36;
-    color: white;
-}
+
 .service-card-checkout:hover,
 .payment-card:hover{
     cursor: pointer;
-    background-color: #1C2F36;
+    background-color: #3a5964;
     color: white;
 }
 .service-card-checkout:active,
@@ -74,6 +84,22 @@ h1, h2, h3, h4, h5, p{
 }
 .service-card-checkout h4{
     font-size: 0.9rem;
+}
+.service-card-checkout > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-card-checkout > div i{
+    color: white;
+    display: none;
+}
+.selected-service{
+    background-color: #1C2F36;
+    color: white;
+}
+.selected-service > div i{
+    display: block;
 }
 #mid,
 #payment-method,
@@ -116,9 +142,12 @@ h1, h2, h3, h4, h5, p{
     height: 10px;
     border-radius: 10px;
 }
-.selected-method{
+.is-toggled{
     background-color: #1C2F36;
     color: white;
+}
+.is-toggled > div{
+    background-color: #ffffff;
 }
 #card-info-input{
     display: flex;
@@ -128,6 +157,8 @@ h1, h2, h3, h4, h5, p{
 #info{
     display: flex;
     justify-content: space-between;
+    gap: 20px;
+    align-items: center;
 }
 #info-left{
     display: flex;
@@ -136,18 +167,26 @@ h1, h2, h3, h4, h5, p{
     flex: 2;
 }
 #info-right{
+    border-radius: 10px;
+    background-color: #e7e7e7;
     flex: 1;
-    background-image: url("../../../Midea/Service_Cards/khqr_for_check_out.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 350px;
+}
+#info-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+#btn{
+    margin-top: 10px;
 }
 #btn button{
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
-    background-color: var(--color5);
+    background-color: white;
     border: 2px solid #1C2F36;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
@@ -156,9 +195,9 @@ h1, h2, h3, h4, h5, p{
     color: white;
 }
 #btn button:last-child:hover{
-    background-color: #16b44e;
-    border-color: #16b44e;
-    color: white;
+    background-color: var(--color5);
+    border-color: var(--color5);
+    color: #1C2F36;
 }
 #btn button:first-child:hover{
     background-color: #ee2c00;

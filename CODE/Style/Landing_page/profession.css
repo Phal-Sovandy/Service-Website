@@ -42,6 +42,7 @@
     gap: 20px;
 }
 .profile-card{
+    flex-shrink: 0;
     width: 200px;
     height: 200px;
     overflow: hidden;
@@ -83,7 +84,7 @@
 
     animation: progressBar linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 15%;
+    animation-range: entry 0% cover 13%;
 }
 
 #profession-page #card-container{
@@ -165,4 +166,63 @@
 }
 #horizontal-card2 .python{
     width: 95%;
+}
+
+
+@media (max-width: 1070px) {
+    #vertical-card, .horizontal-card{
+        margin: 0;
+    }
+    #horizontal-card1{
+        margin: 0;
+    }
+    
+}
+@media (max-width: 960px) {
+    #vertical-card{
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        width: 600px;
+        height: 300px;
+        padding: 10px 30px;
+    }
+    #vertical-card p{
+        text-align: left;
+    }
+
+    #card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 620px) {
+    #vertical-card, .horizontal-card{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 80%;
+    }
+    .horizontal-card *{
+        text-align: center;
+    }
+    #horizontal-card-container{
+        align-items: center;
+    }
+    .skills{
+        flex: 1;
+        width: auto;
+    }
+    .skills-container, .des-skill{
+        width: 100%;
+    }
+    .profile-card{
+        width: 150px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
 }

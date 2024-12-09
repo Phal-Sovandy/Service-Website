@@ -114,3 +114,13 @@
     color: #1C2F36;
 }
 
+@media (max-width: 1070px) {
+    #about-page{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+}

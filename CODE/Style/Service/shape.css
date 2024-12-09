@@ -1,46 +1,87 @@
-/* shape */
-
 .container-card-service {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
-    background-color: #CDE4;
-    border-radius: 12px;
-    width: 750px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 10px 20px;
+  background-color: rgba(204, 221, 238, 0.244);
+  border-radius: 12px;
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px 20px;
+
+  transition: background-color 0.2s ease-in;
 }
-.card .text{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.card:hover{
+  background-color: rgba(65, 78, 94, 0.7);
 }
-.card p{
-    font-size: 0.8rem;
-    font-weight: 400;
+.card:hover .picture img {
+  transform: scale(1.2);
 }
-.card h2{
-    font-size: 1.2rem;
-    font-weight: 600;
+.card button {
+  margin-top: 20px;
+  margin-right: auto;
+  padding: 10px 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--color6);
+  color: var(--color_darkBlue);
+}
+.card button:hover {
+  transition: background-color 0.2s ease;
+  background-color: var(--color4);
+}
+.card button:active {
+  background-color: var(--color_darkBlue);
+  color: var(--color4);
+}
+.card .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-height: 90%;
+}
+.card .text > div {
+  padding-right: 10px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.card .text > div span {
+  font-weight: 600;
+  color: var(--color5);
+}
+.card p,
+.card li {
+  color: var(--color3);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.card h2 {
+  width: 100%;
+  color: var(--color4);
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .picture {
-    width: 200px;
-    height: 200px;
-    flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
 }
-.picture img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
 }

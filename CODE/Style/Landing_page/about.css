@@ -15,7 +15,6 @@
 }
 #about-page #right, 
 #about-page #left{
-    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -71,6 +70,7 @@
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0;
 
     background: rgba(255, 74, 74, 0.74);
 }
@@ -123,4 +123,18 @@
         gap: 50px;
     }
     
+}
+
+@media (max-width: 680px) {
+    .about-card{
+        width: 90%;
+        height: auto;
+    }
+    #about-page #right #sreng,
+    #about-page #right #sovandy{
+        margin: 0;
+    }
+    #about-page #right{
+        align-items: center;
+    }
 }

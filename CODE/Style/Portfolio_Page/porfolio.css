@@ -1,14 +1,15 @@
 .projects-container{
     margin-top: 30px;
+    width: 100%;
+    height: calc(100vh - 300px);
     display: grid;
-    grid-template-columns: repeat(5, 220px);
-    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-content: center;
     align-content: center;
     gap: 20px;
 }
 .project-card{
-    position: relative;
     overflow: hidden;
 
     background: rgba(255, 255, 255, 0.3);
@@ -29,7 +30,6 @@
     color: black;
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 100;
     opacity: 0;
     display: flex;
@@ -41,9 +41,6 @@
 .description-project h1{
     max-width: 180px;
     font-size: 1.3rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     line-height: 30px;
 }
 .description-project p{
@@ -58,6 +55,7 @@
     flex-wrap: wrap;
 }
 .description-project .project-btn button{
+    font-size: 0.8rem;
     padding: 5px 15px;
     border-radius: 30px;
     transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
@@ -160,4 +158,37 @@
 }
 #todo{
     background-image: url("../../../Midea/project-card/p4.png");
+}
+
+@media (max-width: 768px) {
+    .description-project h1{
+        font-size: 0.9rem;
+        line-height: 30px;
+    }
+    .description-project p{
+        font-size: 0.6rem;
+    }
+    .description-project .project-btn button{
+        font-size: 0.6rem;
+    }
+    .projects-container{
+        gap: 5px;
+    }
+    .project-card{
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projects-container{
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .project-card{
+        height: 250px;
+        width: 200px;
+    }
 }

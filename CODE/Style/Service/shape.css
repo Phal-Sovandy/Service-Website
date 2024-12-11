@@ -85,3 +85,16 @@
   object-fit: contain;
   transition: transform 0.5s ease;
 }
+
+@media (max-width: 1030px) {
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    max-height: 1000px;
+    padding-block: 20px;
+  }
+  .card .text {
+    height: 400px;
+  }
+}

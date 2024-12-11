@@ -1,15 +1,17 @@
 main {
   margin-top: 20px;
   margin-inline: auto;
-  max-width: 80%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10%;
   margin-bottom: 10px;
 }
 
@@ -30,6 +32,9 @@ header div {
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--color4);
+  
+  min-width: 0px;
+  max-width: 200px;
 }
 
 .blog {
@@ -104,6 +109,7 @@ header div {
 .info {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   font-size: 0.8rem;
 }
 .info div {
@@ -197,4 +203,45 @@ footer #link-social a {
   height: 230px;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  main{
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
 
+}
+@media (max-width: 830px) {
+  main{
+    padding-inline: 10px;
+  }
+  .blog-post {
+    flex-direction: column;
+    height: 500px;
+  }
+  .thumbnail {
+    width: 100%;
+    height: 200px;
+  }
+  .content {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 380px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .trend > h1{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .blog-post {
+    height: 400px;
+  }
+  .thumbnail {
+    width: 600px;
+  }
+}

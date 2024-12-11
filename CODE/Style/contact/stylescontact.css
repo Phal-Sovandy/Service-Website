@@ -24,6 +24,8 @@
 }
 
 .card-container {
+  margin: auto;
+  max-width: 2000px;
   display: flex;
   flex-direction: column;
   justify-content: center;

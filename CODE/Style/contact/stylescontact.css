@@ -60,6 +60,7 @@
 .card .avatar {
   max-width: 250px;
   max-height: 250px;
+  aspect-ratio: 1;
   border-radius: 50%;
   flex-shrink: 0;
   overflow: hidden;

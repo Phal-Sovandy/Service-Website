@@ -138,3 +138,9 @@
         align-items: center;
     }
 }
+
+@media (max-width: 370px) {
+    #about-page #left h1{
+        font-size: 3.5rem;
+    }
+}
